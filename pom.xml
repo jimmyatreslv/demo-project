@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo-project</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -44,11 +44,10 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-				<groupId>io.fabric8</groupId>
-				<artifactId>fabric8-maven-plugin</artifactId>
-				<version>4.4.1</version>
+				<groupId>org.eclipse.jkube</groupId>
+				<artifactId>kubernetes-maven-plugin</artifactId>
+				<version>1.0.0-rc-1</version>
 				<configuration>
-					<mode>kubernetes</mode>
 					<namespace>dev</namespace>
 					<generator>
 						<includes>
@@ -60,16 +59,6 @@
 							</spring-boot>
 						</config>
 					</generator>
-					<executions>
-						<execution>
-							<id>fabric8</id>
-							<goals>
-								<goal>resource</goal>
-								<goal>build</goal>
-								<goal>helm</goal>
-							</goals>
-						</execution>
-					</executions>
 				</configuration>
 			</plugin>
 		</plugins>
