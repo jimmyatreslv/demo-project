@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo-project</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -48,6 +48,7 @@
 				<artifactId>kubernetes-maven-plugin</artifactId>
 				<version>1.0.0-rc-1</version>
 				<configuration>
+					<buildStrategy>docker</buildStrategy>
 					<namespace>dev</namespace>
 					<generator>
 						<includes>
@@ -55,10 +56,11 @@
 						</includes>
 						<config>
 							<spring-boot>
-								<name>jimmyatreslv/%a:${version}</name>
+								<name>jimmyatreslv/%a:${project.version}</name>
 							</spring-boot>
 						</config>
 					</generator>
+
 				</configuration>
 			</plugin>
 		</plugins>
