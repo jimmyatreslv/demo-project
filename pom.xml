@@ -60,7 +60,9 @@
 							</spring-boot>
 						</config>
 					</generator>
-
+					<resources>
+						<imagePullPolicy>Always</imagePullPolicy>
+					</resources>
 				</configuration>
 			</plugin>
 		</plugins>

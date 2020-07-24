@@ -2,7 +2,7 @@
 
 -   build and update image
 
-`./mvnw package k8s:build k8s:push`
+`./mvnw clean package k8s:build k8s:push`
 
 -   generate k8s resource and deploy
 
