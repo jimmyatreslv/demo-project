@@ -12,6 +12,12 @@
 
 `kubectl get all -n dev -l app=demo-project`
 
+-   test app in k8s
+
+`curl -i service_ip:8080; echo`
+
+`curl -i service_ip:8080/greeting; echo`
+
 -   undeploy
 
 `./mvnw k8s:undeploy`
