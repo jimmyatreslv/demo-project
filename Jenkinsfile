@@ -22,10 +22,10 @@ pipeline {
 
         stage('Test others') {
           steps {
-            sh '''which java
-which gradle
-which maven
-which mvn'''
+            sh '''which java|| echo "no java"
+which gradle || echo "no gradle"
+which maven || echo "no maven"
+which mvn || echo "no mvn"'''
           }
         }
 
