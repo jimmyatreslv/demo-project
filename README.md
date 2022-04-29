@@ -25,4 +25,4 @@
 
 update readme
 
-update by post recieve hook
+update by webook by jenkins github plugin
