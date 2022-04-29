@@ -21,3 +21,6 @@
 -   undeploy
 
 `./mvnw k8s:undeploy`
+
+
+update
