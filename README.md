@@ -23,4 +23,4 @@
 `./mvnw k8s:undeploy`
 
 
-update
+update readme
