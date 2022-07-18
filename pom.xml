@@ -9,12 +9,12 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo-project</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<!-- <java.version>11</java.version> -->
 		<docker.skip.tag>true</docker.skip.tag>
 	</properties>
 
@@ -35,6 +35,8 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+        
 	</dependencies>
 
 	<build>

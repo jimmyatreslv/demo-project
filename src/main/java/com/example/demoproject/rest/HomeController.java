@@ -11,7 +11,12 @@ public class HomeController {
     private String appVersion;
 
     @GetMapping("/")
-    public @ResponseBody String greeting() {
+    public @ResponseBody String greeting_home() {
         return "Hello, World @" + appVersion;
+    }
+
+    @GetMapping("/hello")
+    public @ResponseBody String greeting() {
+        return "Hello, World";
     }
 }
